@@ -1,0 +1,88 @@
+
+<html>
+<head>
+
+<!--META-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login Form</title>
+
+<!--STYLESHEETS-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<!--SCRIPTS-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<!--Slider-in icons-->
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".username").focus(function() {
+		$(".user-icon").css("left","-48px");
+	});
+	$(".username").blur(function() {
+		$(".user-icon").css("left","0px");
+	});
+	
+	$(".password").focus(function() {
+		$(".pass-icon").css("left","-48px");
+	});
+	$(".password").blur(function() {
+		$(".pass-icon").css("left","0px");
+	});
+});
+</script>
+
+</head>
+<body>
+
+<!--WRAPPER-->
+<div id="wrapper">
+
+	<!--SLIDE-IN ICONS-->
+    <div class="user-icon"></div>
+    <div class="pass-icon"></div>
+    <!--END SLIDE-IN ICONS-->
+
+<!--LOGIN FORM-->
+<form name="login-form" class="login-form" action="ajout.php" method="post">
+
+	<!--HEADER-->
+    <div class="header">
+    <!--TITLE--><h1>Ajout ressource</h1><!--END TITLE-->
+    <!--DESCRIPTION--><span>Remplir la formulaire suivante pour ajouter une ressource.</span><!--END DESCRIPTION-->
+    </div>
+    <!--END HEADER-->
+	
+	<!--CONTENT-->
+    <div class="content">
+	 <br><b><font color="#0B0B61">identifiant ressource:</font> </b><br><!--utilisateur--><input name="idrr" type="text" class="input username" onfocus="this.value=''" /><!--END USERNAME-->
+ <br><b><font color="#0B0B61">type:</font> </b><br><!--libelle--><input name="typer" type="text" class="input username"  onfocus="this.value=''" /><!--END USERNAME-->
+ <br><b><font color="#0B0B61">libelle ressource:</font> </b><br><!--datedebut--><input name="libr" type="text" class="input password"  onfocus="this.value=''" /><!--END PASSWORD-->
+<br><b><font color="#0B0B61">service:</font> </b><br><!--datefin--><input name="servr" type="text" class="input username" onfocus="this.value=''" /><!--END USERNAME-->
+<br><b><font color="#0B0B61">cout:</font> </b><br><!--ressource--><input name="coutr" type="text" class="input username"  onfocus="this.value=''" /><!--END USERNAME-->
+<br><b><font color="#0B0B61">nom:</font> </b><br><!--utilisateur--><input name="nomr" type="text" class="input username" onfocus="this.value=''" /><!--END USERNAME-->
+<br><b><font color="#0B0B61">prenom:</font> </b><br><!--utilisateur--><input name="prenomr" type="text" class="input username" onfocus="this.value=''" /><!--END USERNAME-->
+<br><b><font color="#0B0B61">adresse:</font> </b><br><!--utilisateur--><input name="adrr" type="text" class="input username" onfocus="this.value=''" /><!--END USERNAME-->
+<br><b><font color="#0B0B61">telephone:</font> </b><br><!--utilisateur--><input name="telr" type="text" class="input username" onfocus="this.value=''" /><!--END USERNAME-->
+<br><b><font color="#0B0B61">email:</font> </b><br><!--utilisateur--><input name="emailr" type="text" class="input username" onfocus="this.value=''" /><!--END USERNAME-->
+<br><b><font color="#0B0B61">debut disponibilite:</font> </b><br><!--utilisateur--><input name="dr" type="text" class="input username" onfocus="this.value=''" /><!--END USERNAME-->
+<br><b><font color="#0B0B61">fin disponibilite:</font> </b><br><!--utilisateur--><input name="df" type="text" class="input username" onfocus="this.value=''" /><!--END USERNAME-->
+<br><b><font color="#0B0B61">competence:</font> </b><br><!--utilisateur--><input name="cr" type="text" class="input username" onfocus="this.value=''" /><!--END USERNAME-->
+<br><b><font color="#0B0B61">referance:</font> </b><br><!--utilisateur--><input name="refr" type="text" class="input username" onfocus="this.value=''" /><!--END USERNAME-->
+ <br><b><font color="#0B0B61">libelle tache:</font> </b><br><!--utilisateur--><input name="libt" type="text" class="input username" onfocus="this.value=''" /><!--END USERNAME-->
+ 
+    <!--FOOTER-->
+    <div class="footer">
+    <!--LOGIN BUTTON--><input type="submit" name="ajoutr" value="Ajout ressource" class="button" /><!--END LOGIN BUTTON-->
+    
+    </div>
+    <!--END FOOTER-->
+
+</form>
+<!--END LOGIN FORM-->
+
+</div>
+<!--END WRAPPER-->
+
+<!--GRADIENT--><div class="gradient"></div><!--END GRADIENT-->
+
+</body>
+</html>

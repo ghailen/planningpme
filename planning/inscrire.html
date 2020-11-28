@@ -1,0 +1,85 @@
+
+<html>
+<head>
+
+<!--META-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login Form</title>
+
+<!--STYLESHEETS-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<!--SCRIPTS-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<!--Slider-in icons-->
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".username").focus(function() {
+		$(".user-icon").css("left","-48px");
+	});
+	$(".username").blur(function() {
+		$(".user-icon").css("left","0px");
+	});
+	
+	$(".password").focus(function() {
+		$(".pass-icon").css("left","-48px");
+	});
+	$(".password").blur(function() {
+		$(".pass-icon").css("left","0px");
+	});
+});
+</script>
+
+</head>
+<body>
+
+<!--WRAPPER-->
+<div id="wrapper">
+
+	<!--SLIDE-IN ICONS-->
+    <div class="user-icon"></div>
+    <div class="pass-icon"></div>
+    <!--END SLIDE-IN ICONS-->
+
+<!--LOGIN FORM-->
+<form name="login-form" class="login-form" action="merci.php" method="post"  >
+
+	<!--HEADER-->
+    <div class="header">
+    <!--TITLE--><h1>S'inscrire</h1><!--END TITLE-->
+    <!--DESCRIPTION--><span>Remplir la formulaire suivante pour s'inscrire dans l'entreprise .</span><!--END DESCRIPTION-->
+    </div>
+    <!--END HEADER-->
+	
+	<!--CONTENT-->
+    <div class="content">
+	 <b><font color="#0B0B61">l'identifiant:</font> </b><br><!--USERNAME--><input name="username" type="text" class="input username" value="Nom d utilisateur" onfocus="this.value=''" /><!--END USERNAME-->
+     <br><b><font color="#0B0B61">Mot de passe:</font> </b><br><!--PASSWORD--><input name="password" type="password" class="input password" value="mot de passe" onfocus="this.value=''" /><!--END PASSWORD-->
+	 <br><b><font color="#0B0B61">Nom:</font> </b><br><!--nom--><input name="nom" type="text" class="input username" value="Nom" onfocus="this.value=''" /><!--END USERNAME-->
+	 <br><b><font color="#0B0B61">Prenom:</font> </b><br><!--prenom--><input name="prenom" type="text" class="input username" value="Prenom" onfocus="this.value=''" /><!--END USERNAME-->
+     <br><b><font color="#0B0B61">Telephone:</font> </b><br><!--telephone--><input name="telephone" type="text" class="input username" value="Telephone" onfocus="this.value=''" /><!--END USERNAME-->
+	 <br><b><font color="#0B0B61">Adresse:</font> </b><br><!--adresse--><input name="adresse" type="text" class="input username" value="Adresse" onfocus="this.value=''" /><!--END USERNAME-->
+	 <br><b><font color="#0B0B61">Naissance:</font> </b><br><!--date de naissance--><input name="daten" type="text" class="input username" value="Date de Naissance" onfocus="this.value=''" /><!--END USERNAME-->
+	 <br><b><font color="#0B0B61">Salaire:</font> </b><br><!--salaire--><input name="salaire" type="text" class="input username" value="Salaire" onfocus="this.value=''" /><!--END USERNAME-->
+	 <br><b><font color="#0B0B61">Nombre D'heure:</font> </b><br><!--nombre d'heure--><input name="nbr" type="text" class="input username" value="Nombre d'heure" onfocus="this.value=''" /><!--END USERNAME-->
+	 <br><b><font color="#0B0B61">Score:</font> </b><br><!--Score--><input name="score" type="text" class="input username" value="Score" onfocus="this.value=''" /><!--END USERNAME-->
+	 <br><b><font color="#0B0B61">Type (admin ou utilisateur):</font> </b><br><!--Score--><input name="type" type="text" class="input username" value="type" onfocus="this.value=''" /><!--END USERNAME-->
+	
+    
+    <!--FOOTER-->
+    <div class="footer">
+    <!--LOGIN BUTTON--><input type="submit" name="submit" value="S'Inscrire" class="button" /><!--END LOGIN BUTTON-->
+    
+    </div>
+    <!--END FOOTER-->
+
+</form>
+<!--END LOGIN FORM-->
+
+</div>
+<!--END WRAPPER-->
+
+<!--GRADIENT--><div class="gradient"></div><!--END GRADIENT-->
+
+</body>
+</html>
